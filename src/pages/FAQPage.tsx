@@ -816,6 +816,28 @@ export function FAQPage() {
                 </div>
               </FAQQuestion>
 
+              <FAQQuestion value="follower-counts" question="How does Divine count followers and following?">
+                <div className="text-muted-foreground space-y-2">
+                  <p>
+                    Your follower count is the number of accounts that currently follow you, and your
+                    following count is the number of accounts you currently follow. These counts can
+                    differ from other Nostr apps because different services may have indexed different
+                    parts of the public network.
+                  </p>
+                  <p>
+                    When you block someone, Divine stops showing you their content and hides their
+                    interactions with you. If you were following them, blocking unfollows them too, so
+                    your following count drops by one and so does their follower count.
+                  </p>
+                  <p>
+                    Blocking does not touch their follow of you. A follow is a public Nostr event
+                    published from their account, not yours, so your own follower count stays the
+                    same. Blocking also can't stop them from finding your public posts through
+                    another app or relay.
+                  </p>
+                </div>
+              </FAQQuestion>
+
               <FAQQuestion value="ai-data-selling" question="Is Divine going to sell our data or content to AI companies?">
                 <div className="text-muted-foreground space-y-2">
                   <p>
